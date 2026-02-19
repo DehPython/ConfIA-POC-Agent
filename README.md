@@ -118,20 +118,22 @@ docker attach paradox-backend
 
 | Variável | Descrição |
 | :--- | :--- |
-| `HF_TOKEN` | Token do Hugging Face para download dos modelos |
+| `HF_TOKEN` | Token do Hugging Face para download dos modelos <br> _(Não é obrigatório mas acelera o download dos modelos)_
 
 ### Backend (`backend/.env`)
 
-| Variável | Descrição | Default |
-| :--- | :--- | :--- |
-| `LLM_BASE_URL` | URL base da API do LLM | `https://openrouter.ai/api/v1` |
-| `LLM_MODEL` | ID do modelo LLM na OpenRouter | — |
-| `LLM_API_KEY` | Chave de API da OpenRouter | — |
-| `ASR_URL` | URL do microsserviço ASR | `http://localhost:8000` |
-| `ASR_MODEL_ID` | Modelo de transcrição (`freds0` ou `lite_asr`) | `lite_asr` |
-| `WHATSAPP_ENABLED` | Ativa/desativa o bot WhatsApp | `true` |
-| `WHATSAPP_BOT_NUMBER` | Número do bot no WhatsApp | — |
-| `WEB_PORT` | Porta do servidor Express | `3000` |
-| `NODE_ENV` | Ambiente de execução | `development` |
-| `LOG_LEVEL` | Nível de log | `info` |
-| `CONVERSATION_TIMEOUT_MIN` | Timeout da memória do agente (minutos) | `120` |
+Recomendado deixar o default no que não for obrigátorio, configure apenas se quiser...
+
+| Variável | Descrição | Default | Obrigatório? |
+| :--- | :--- | :--- | :---: |
+| `LLM_BASE_URL` | URL base da API do LLM | `https://openrouter.ai/api/v1` |✅|
+| `LLM_MODEL` | ID do modelo LLM na OpenRouter | {COLOQUE_ID_DO_LLM} |✅|
+| `LLM_API_KEY` | Chave de API da OpenRouter | {COLOQUE_SUA_CHAVE_API} |✅|
+| `ASR_URL` | URL do microsserviço ASR | `http://localhost:8000` |❌|
+| `ASR_MODEL_ID` | Modelo de transcrição (`freds0` ou `lite_asr`) | `lite_asr` |✅|
+| `WHATSAPP_ENABLED` | Ativa/desativa o bot WhatsApp | `true` |❌|
+| `WHATSAPP_ATTENDANT_NUMBER` | Número do atendente humano no WhatsApp (_Não é o do bot !_) | {COLOQUE_SEU_NUMERO_DE_ATENDENTE} |❌|
+| `WEB_PORT` | Porta do servidor Express | `3000` |❌|
+| `NODE_ENV` | Ambiente de execução | `development` |❌|
+| `LOG_LEVEL` | Nível de log | `info` |❌|
+| `CONVERSATION_TIMEOUT_MIN` | Timeout da memória do agente (minutos) | `120` |❌|
