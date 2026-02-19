@@ -1,0 +1,21 @@
+{
+  "name": "neo-agent-poc",
+  "version": "1.0.0",
+  "description": "POC Agente IA Conversacional",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "start:asr": "docker run -p 8000:8000 -e HF_TOKEN=$HF_TOKEN -v hf_cache:/root/.cache/huggingface paradox-asr",
+    "start:asr:gpu": "docker run -p 8000:8000 -e HF_TOKEN=$HF_TOKEN -v hf_cache:/root/.cache/huggingface --gpus all paradox-asr"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.0",
+    "express": "^4.21.0",
+    "form-data": "^4.0.0",
+    "node-fetch": "^2.7.0",
+    "openai": "^4.70.0",
+    "qrcode-terminal": "^0.12.0",
+    "whatsapp-web.js": "^1.26.0"
+  }
+}

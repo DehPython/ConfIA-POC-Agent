@@ -1,0 +1,14 @@
+# Backend
+backend/.env
+backend/.wwebjs_auth
+backend/.wwebjs_cache
+backend/node_modules
+
+# ASR
+asr/.env
+
+# Docs
+docs/Relatório de Avaliação - POC Agente de IA.pdf
+
+# Claude
+.claude
