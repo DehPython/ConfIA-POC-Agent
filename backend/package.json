@@ -5,9 +5,7 @@
   "main": "src/index.js",
   "scripts": {
     "start": "node src/index.js",
-    "dev": "node --watch src/index.js",
-    "start:asr": "docker run -p 8000:8000 -e HF_TOKEN=$HF_TOKEN -v hf_cache:/root/.cache/huggingface paradox-asr",
-    "start:asr:gpu": "docker run -p 8000:8000 -e HF_TOKEN=$HF_TOKEN -v hf_cache:/root/.cache/huggingface --gpus all paradox-asr"
+    "dev": "node --watch src/index.js"
   },
   "dependencies": {
     "dotenv": "^16.4.0",
