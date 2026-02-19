@@ -132,7 +132,7 @@ Recomendado deixar o default no que não for obrigátorio, configure apenas se q
 | `ASR_URL` | URL do microsserviço ASR | `http://localhost:8000` |❌|
 | `ASR_MODEL_ID` | Modelo de transcrição (`freds0` ou `lite_asr`) | `lite_asr` |✅|
 | `WHATSAPP_ENABLED` | Ativa/desativa o bot WhatsApp | `true` |❌|
-| `WHATSAPP_ATTENDANT_NUMBER` | Número do atendente humano no WhatsApp (_Não é o do bot !_) | {COLOQUE_SEU_NUMERO_DE_ATENDENTE} |❌|
+| `WHATSAPP_ATTENDANT_NUMBER` | Número do atendente humano no WhatsApp | {COLOQUE_SEU_NUMERO_DE_ATENDENTE} |❌|
 | `WEB_PORT` | Porta do servidor Express | `3000` |❌|
 | `NODE_ENV` | Ambiente de execução | `development` |❌|
 | `LOG_LEVEL` | Nível de log | `info` |❌|
