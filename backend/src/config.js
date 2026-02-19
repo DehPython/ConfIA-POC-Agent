@@ -12,7 +12,7 @@ module.exports = {
   },
   whatsapp: {
     enabled: process.env.WHATSAPP_ENABLED === 'true',
-    botNumber: process.env.WHATSAPP_BOT_NUMBER || '',
+    botNumber: process.env.WHATSAPP_ATTENDANT_NUMBER || '',
   },
   server: {
     port: parseInt(process.env.WEB_PORT, 10) || 3000,
