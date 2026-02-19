@@ -127,12 +127,12 @@ Recomendado deixar o default no que não for obrigátorio, configure apenas se q
 | Variável | Descrição | Default | Obrigatório? |
 | :--- | :--- | :--- | :---: |
 | `LLM_BASE_URL` | URL base da API do LLM | `https://openrouter.ai/api/v1` |✅|
-| `LLM_MODEL` | ID do modelo LLM na OpenRouter | {COLOQUE_ID_DO_LLM} |✅|
-| `LLM_API_KEY` | Chave de API da OpenRouter | {COLOQUE_SUA_CHAVE_API} |✅|
+| `LLM_MODEL` | ID do modelo LLM na OpenRouter | {COLE_ID_DO_LLM} |✅|
+| `LLM_API_KEY` | Chave de API da OpenRouter | {COLE_SUA_CHAVE_API} |✅|
 | `ASR_URL` | URL do microsserviço ASR | `http://localhost:8000` |❌|
 | `ASR_MODEL_ID` | Modelo de transcrição (`freds0` ou `lite_asr`) | `lite_asr` |✅|
 | `WHATSAPP_ENABLED` | Ativa/desativa o bot WhatsApp | `true` |❌|
-| `WHATSAPP_ATTENDANT_NUMBER` | Número do atendente humano no WhatsApp | {COLOQUE_SEU_NUMERO_DE_ATENDENTE} |❌|
+| `WHATSAPP_ATTENDANT_NUMBER` | Número do atendente humano no WhatsApp | {COLE_NUMERO_DO_ATENDENTE} |❌|
 | `WEB_PORT` | Porta do servidor Express | `3000` |❌|
 | `NODE_ENV` | Ambiente de execução | `development` |❌|
 | `LOG_LEVEL` | Nível de log | `info` |❌|
