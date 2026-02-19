@@ -125,7 +125,7 @@ docker attach paradox-backend
 Recomendado deixar o default no que não for obrigátorio, configure apenas se quiser...
 
 | Variável | Descrição | Default | Obrigatório? |
-| :--- | :--- | :--- | :---: |
+| :--- | :--- | :---: | :---: |
 | `LLM_BASE_URL` | URL base da API do LLM | `https://openrouter.ai/api/v1` |✅|
 | `LLM_MODEL` | ID do modelo LLM na OpenRouter | {COLE_ID_DO_LLM} |✅|
 | `LLM_API_KEY` | Chave de API da OpenRouter | {COLE_SUA_CHAVE_API} |✅|
