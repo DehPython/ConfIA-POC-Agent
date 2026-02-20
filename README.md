@@ -30,10 +30,14 @@ _Atualmente, o bot opera exclusivamente através do WhatsApp. O objetivo a médi
 - **ASR** — Microsserviço independente de transcrição de áudio (Whisper PT-BR), containerizado via Docker.
 
 ## Pré-requisitos
-
+### Node JS
+Instale o node JS uma versão >= 20:
 - [Node.js](https://nodejs.org/) >= 20
+### Instale o Docker e o Docker compose
 - [Docker](https://docs.docker.com/get-docker/) e [Docker Compose](https://docs.docker.com/compose/)
+### Acesse a OpenRouter e crie/use sua chave API _(É GRATUITO!)_
 - Conta na [OpenRouter](https://openrouter.ai/) (chave de API para o LLM)
+### Gere seu Token no HugginFace
 - Token do [Hugging Face](https://huggingface.co/settings/tokens) (para download dos modelos ASR)
 
 ## Setup
